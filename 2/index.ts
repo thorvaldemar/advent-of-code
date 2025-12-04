@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const docs = fs.readFileSync(`${__dirname}/docs.txt`, 'ascii');
+const docs = fs.readFileSync(`${__dirname}/test.txt`, 'ascii');
 const productIDs = docs.split(',').map(e => e.split('-').map(e => parseInt(e))) as [number, number][];
 
 function part1() {

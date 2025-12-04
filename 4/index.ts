@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const docs = fs.readFileSync(`${__dirname}/docs.txt`, 'ascii');
+const docs = fs.readFileSync(`${__dirname}/test.txt`, 'ascii');
 const grid = docs.split('\n').map(e => e.trim().split(''));
 const height = grid.length;
 const width = grid[0]!.length;

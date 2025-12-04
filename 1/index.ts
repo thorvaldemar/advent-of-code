@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const instructions = fs.readFileSync(`${__dirname}/docs.txt`, 'ascii').trim().split('\n').map(e => e.trim());
+const instructions = fs.readFileSync(`${__dirname}/test.txt`, 'ascii').trim().split('\n').map(e => e.trim());
 
 function calcZeroHit(direct: boolean) {
     let dial = 50;

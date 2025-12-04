@@ -1,6 +1,6 @@
 import fs from 'fs';
 
-const docs = fs.readFileSync(`${__dirname}/docs.txt`, 'ascii');
+const docs = fs.readFileSync(`${__dirname}/test.txt`, 'ascii');
 const banks = docs.split('\n').map(e => e.trim().split('').map(e => parseInt(e)));
 
 function calcJoltage(len: number) {
